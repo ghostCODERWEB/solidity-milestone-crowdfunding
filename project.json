@@ -1,0 +1,14 @@
+{
+  "name": "solidity-milestone-crowdfunding",
+  "title": "Milestone token crowdfunding",
+  "contract": "MilestoneCrowdfund",
+  "description": "Goal-based token funding with contributor-weighted milestone approvals, beneficiary releases and failure refunds.",
+  "args": [
+    "$TOKEN",
+    "$BENEFICIARY",
+    "$END",
+    1000,
+    "$ADMIN"
+  ],
+  "assumptions": "A successful campaign locks unapproved funds indefinitely unless future milestones gain majority approval. There is no contributor rage-quit or beneficiary guarantee. Weight equals historical contribution; milestone votes require a strict majority of total funding. Failed campaigns refund principal."
+}
